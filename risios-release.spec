@@ -4,7 +4,7 @@
 Summary:	risiOS release files
 Name:		risios-release
 Version:	0.1
-Release:	3%{?dist}
+Release:	1%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
@@ -47,7 +47,8 @@ Suggests:   risios-release
 Obsoletes:  redhat-release
 Provides:   redhat-release
 
-Conflicts:  fedora-release-common
+Requires:   fedora-repos(34)
+Conflicts: fedora-release-common
 
 %description common
 Release files common to all Editions and Spins
