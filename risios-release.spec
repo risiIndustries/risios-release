@@ -4,7 +4,7 @@
 Summary:	risiOS release files
 Name:		risios-release
 Version:	0.1
-Release:	1%{?dist}
+Release:	3%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
@@ -47,8 +47,7 @@ Suggests:   risios-release
 Obsoletes:  redhat-release
 Provides:   redhat-release
 
-Requires:   fedora-repos(%{version})
-Conflicts: fedora-release-common
+Conflicts:  fedora-release-common
 
 %description common
 Release files common to all Editions and Spins
@@ -66,7 +65,6 @@ risiOS release notes package. This package explicitly is a replacement
 for the trademarked release-notes package, if you are unable for any reason
 to abide by the trademark restrictions on that release-notes
 package. Please note that there is no actual useful content here.
-
 
 %prep
 
