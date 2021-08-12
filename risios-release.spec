@@ -2,7 +2,7 @@
 %global dist_version 0.1
 
 Summary:	risiOS release files
-Name:		risios-release
+Name:		  risios-release
 Version:	0.1
 Release:	4%{?dist}
 License:	MIT
@@ -15,12 +15,13 @@ Source3:	README.license
 Source6:	85-display-manager.preset
 Source7:	90-default.preset
 Source8:	99-default-disable.preset
-Source9:   	90-default-user.preset
+Source9:  90-default-user.preset
 
 BuildArch: 	noarch
 
-Provides: 	risios-release = %{version}-%{release}
-Provides: 	risios-release-variant = %{version}-%{release}
+Provides: 	risios-release
+Provides: 	risios-release-variant
+Provides: 	risios-release-identity
 
 # We need to Provides: and Conflicts: system release here and in each
 # of the generic-release-$VARIANT subpackages to ensure that only one
@@ -29,6 +30,7 @@ Conflicts: 	system-release
 Provides: 	system-release
 Provides: 	system-release(%{version})
 Conflicts:	fedora-release
+Conflicts:	fedora-release.identity
 Requires: 	risios-release-common = %{version}-%{release}
 
 %description
@@ -41,14 +43,11 @@ trademark restrictions on that release package.
 %package common
 Summary: risiOS release files
 
-Requires:   risios-release-variant = %{version}-%{release}
+Requires:   risios-release-variant
 Suggests:   risios-release
 
-Obsoletes:  redhat-release
-Provides:   redhat-release
-
 Requires:   fedora-repos(34)
-Conflicts: fedora-release-common
+Conflicts:  fedora-release-common
 
 %description common
 Release files common to all Editions and Spins
