@@ -29,7 +29,7 @@ Conflicts: 	system-release
 Provides: 	system-release
 Provides: 	system-release(%{version})
 Conflicts:	fedora-release
-Requires: 	risiOS-release-common = %{version}-%{release}
+Requires: 	risios-release-common = %{version}-%{release}
 
 %description
 risiOS release files such as yum configs and various /etc/ files that
@@ -41,8 +41,8 @@ trademark restrictions on that release package.
 %package common
 Summary: risiOS release files
 
-Requires:   risi-release-variant = %{version}-%{release}
-Suggests:   risi-release
+Requires:   risios-release-variant = %{version}-%{release}
+Suggests:   risios-release
 
 Obsoletes:  redhat-release
 Provides:   redhat-release
