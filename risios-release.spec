@@ -15,7 +15,7 @@ Source3:	README.license
 Source6:	85-display-manager.preset
 Source7:	90-default.preset
 Source8:	99-default-disable.preset
-Source9:    90-default-user.preset
+Source9:	90-default-user.preset
 
 BuildArch: 	noarch
 
