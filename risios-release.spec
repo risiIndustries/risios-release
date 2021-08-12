@@ -4,7 +4,7 @@
 Summary:	risiOS release files
 Name:       risios-release
 Version:	0.1
-Release:	5%{?dist}
+Release:	6%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
