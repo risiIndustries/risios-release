@@ -28,7 +28,7 @@ Provides: 	risios-release-identity
 # may be installed on the system at a time.
 Conflicts: 	system-release
 Provides: 	system-release
-Provides: 	system-release(%{version})
+Provides: 	system-release(34)
 Conflicts:	fedora-release
 Conflicts:	fedora-release.identity
 Requires: 	risios-release-common = %{version}-%{release}
