@@ -5,7 +5,7 @@
 Summary:	risiOS release files
 Name:		risios-release
 Version:	%{dist_version}
-Release:	8%{?dist}
+Release:	9%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
@@ -127,8 +127,8 @@ cat >> $RPM_BUILD_ROOT%{_rpmconfigdir}/macros.d/macros.dist << EOF
 # dist macros.
 
 %%fedora		%{fedora_version}
-%%dist			%%{?distprefix}.fc%%{fedora_version}%%{?with_bootstrap:~bootstrap}
-%%fc%{dist_version}	1
+%%dist			%%{?distprefix}.fc%{fedora_version}%%{?with_bootstrap:~bootstrap}
+%%fc%{fedora_version}	1
 EOF
 
 # Install readme
