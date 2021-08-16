@@ -2,7 +2,7 @@
 %global dist_version 0.1
 
 Summary:	risiOS release files
-Name:       risios-release
+Name:     risios-release
 Version:	0.1
 Release:	6%{?dist}
 License:	MIT
