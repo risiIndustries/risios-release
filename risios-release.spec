@@ -1,9 +1,9 @@
 %global release_name risiOS
-%global dist_version 0.1
+%global dist_version 34
 
 Summary:	risiOS release files
 Name:     risios-release
-Version:	0.1
+Version:	%{dist_version}
 Release:	7%{?dist}
 License:	MIT
 Group:		System Environment/Base
@@ -28,7 +28,7 @@ Provides: 	risios-release-identity
 # may be installed on the system at a time.
 Conflicts: 	system-release
 Provides: 	system-release
-Provides: 	system-release(34)
+Provides: 	system-release(%{dist_version})
 Conflicts:	fedora-release
 Conflicts:	fedora-release.identity
 Requires: 	risios-release-common = %{version}-%{release}
@@ -46,7 +46,7 @@ Summary: risiOS release files
 Requires:   risios-release-variant
 Suggests:   risios-release
 
-Requires:   fedora-repos(34)
+Requires:   fedora-repos(%{dist_version})
 Conflicts:  fedora-release-common
 
 %description common
