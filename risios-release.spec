@@ -1,11 +1,10 @@
 %global release_name 	The Big Beta
 %global dist_version 	0.1
-%global fedora_version	34
 
 Summary:	risiOS release files
 Name:		risios-release
 Version:	%{dist_version}
-Release:	9%{?dist}
+Release:	10%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
@@ -29,7 +28,7 @@ Provides: 	risios-release-identity
 # may be installed on the system at a time.
 Conflicts: 	system-release
 Provides: 	system-release
-Provides: 	system-release(%{fedora_version})
+Provides: 	system-release(%{dist_version})
 Conflicts:	fedora-release
 Conflicts:	fedora-release.identity
 Requires: 	risios-release-common = %{version}-%{release}
@@ -47,7 +46,7 @@ Summary: risiOS release files
 Requires:   risios-release-variant
 Suggests:   risios-release
 
-Requires:   fedora-repos(%{fedora_version})
+Requires:   fedora-repos(%{dist_version})
 Conflicts:  fedora-release-common
 
 %description common
@@ -126,9 +125,9 @@ install -d -m 755 $RPM_BUILD_ROOT%{_rpmconfigdir}/macros.d
 cat >> $RPM_BUILD_ROOT%{_rpmconfigdir}/macros.d/macros.dist << EOF
 # dist macros.
 
-%%fedora		%{fedora_version}
-%%dist			%%{?distprefix}.fc%{fedora_version}%%{?with_bootstrap:~bootstrap}
-%%fc%{fedora_version}	1
+%%fedora		%{dist_version}
+%%dist			%%{?distprefix}.fc%{dist_version}%%{?with_bootstrap:~bootstrap}
+%%fc%{dist_version}	1
 EOF
 
 # Install readme
