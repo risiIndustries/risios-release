@@ -87,7 +87,7 @@ install -d $RPM_BUILD_ROOT/usr/lib/os.release.d/
 cat << EOF >>%{buildroot}%{_prefix}/lib/os-release
 NAME=risiOS
 VERSION="%{dist_version} (%{release_name})"
-ID=risi
+ID=risios
 ID_LIKE=fedora
 VERSION_ID=%{dist_version}
 PRETTY_NAME="risiOS %{dist_version} (%{release_name})"
