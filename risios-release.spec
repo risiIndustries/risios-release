@@ -1,5 +1,5 @@
 %global release_name 	The Big Beta
-%global dist_version 	35
+%global dist_version 	36
 
 Summary:	risiOS release files
 Name:		risios-release
