@@ -1,5 +1,5 @@
-%global release_name 	The Big Beta
-%global dist_version 	36
+%global release_name 	The Beautiful
+%global dist_version 	37
 
 Summary:	risiOS release files
 Name:		risios-release
@@ -181,6 +181,9 @@ install -Dm0644 %{SOURCE9} -t $RPM_BUILD_ROOT%{_prefix}/lib/systemd/user-preset/
 
 
 %changelog
+* Sat Oct 01 2022 PizzaLovingNerd
+- risiOS 37
+
 * Wed Aug 11 2021 PizzaLovingNerd
 - Setup for risiOS
 
