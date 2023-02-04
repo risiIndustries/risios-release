@@ -1,5 +1,5 @@
-%global release_name 	The Beautiful
-%global dist_version 	37
+%global release_name 	The Fragile
+%global dist_version 	38
 
 Summary:	risiOS release files
 Name:		risios-release
