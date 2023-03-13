@@ -1,5 +1,5 @@
 %global release_name 	The Fragile
-%global dist_version 	38
+%global dist_version 	39
 
 Summary:	risiOS release files
 Name:		risios-release
