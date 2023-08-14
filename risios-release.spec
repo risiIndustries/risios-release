@@ -1,10 +1,10 @@
 %global release_name 	The Cure
-%global dist_version 	38
+%global dist_version 	38.1
 
 Summary:	risiOS release files
 Name:		risios-release
 Version:	%{dist_version}
-Release:	2%{?dist}
+Release:	3%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
@@ -96,10 +96,6 @@ CPE_NAME="cpe:/o:risi:risios:%{dist_version}"
 HOME_URL="https://risi.io/"
 SUPPORT_URL="https://risi.io/"
 BUG_REPORT_URL="https://risi.io/"
-REDHAT_BUGZILLA_PRODUCT="risiOS"
-REDHAT_BUGZILLA_PRODUCT_VERSION=%{bug_version}
-REDHAT_SUPPORT_PRODUCT="risiOS"
-REDHAT_SUPPORT_PRODUCT_VERSION=%{bug_version}
 PRIVACY_POLICY_URL="https://risi.io/"
 EOF
 
