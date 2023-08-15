@@ -3,8 +3,8 @@
 
 Summary:	risiOS release files
 Name:		risios-release
-Version:	%{dist_version}
-Release:	3%{?dist}
+Version:	%{dist_version}.1
+Release:	4%{?dist}
 License:	MIT
 Group:		System Environment/Base
 Source0:	LICENSE
