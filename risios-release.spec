@@ -1,5 +1,5 @@
 %global release_name 	The Cure
-%global dist_version 	38.1
+%global dist_version 	38
 
 Summary:	risiOS release files
 Name:		risios-release
